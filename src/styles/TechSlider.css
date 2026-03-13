@@ -1,0 +1,52 @@
+.tech{
+padding:70px 0;
+background:#ffffff;
+text-align:center;
+color:white;
+}
+
+.tech-title{
+font-size:36px;
+margin-bottom:40px;
+}
+
+/* slider container */
+
+.slider{
+overflow:hidden;
+position:relative;
+width:100%;
+}
+
+/* sliding row */
+
+.slide-track{
+display:flex;
+width:calc(250px * 14);
+animation:scroll 20s linear infinite;
+}
+
+/* icons */
+
+.tech-icon{
+font-size:60px;
+margin:0 40px;
+color:#38bdf8;
+transition:0.3s;
+}
+
+.tech-icon:hover{
+transform:scale(1.2);
+color:white;
+}
+
+/* animation */
+
+@keyframes scroll{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-50%);
+}
+}

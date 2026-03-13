@@ -1,0 +1,32 @@
+.footer{
+background:#ffffff;
+padding:40px 20px;
+text-align:center;
+color:#000000;
+font-size: 15px;
+}
+
+.footer-links{
+display:flex;
+justify-content:center;
+gap:40px;
+list-style:none;
+margin-bottom:20px;
+padding:0;
+}
+
+.footer-links a{
+text-decoration:none;
+color:#000000;
+font-size:18px;
+transition:0.3s;
+}
+
+.footer-links a:hover{
+color:#38bdf8;
+}
+
+.copyright{
+font-size:16px;
+color:#000000;
+}
