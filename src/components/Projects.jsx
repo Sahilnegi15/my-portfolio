@@ -21,20 +21,20 @@ function Projects() {
 
   const projects = [
     {
-      title: "Developer Portfolio",
-      desc: "Modern React portfolio with dark/light theme.",
+      title: "Virtual Assistant",
+      desc: " Built an AI self-assistant using LangChain with Agentic RAG, enabling intelligent querying of documents (PDF, DOCX,TXT)",
       github: "#",
       demo: "#"
     },
     {
-      title: "Developer Portfolio",
-      desc: "Modern React portfolio with dark/light theme.",
+      title: "Stock Market Analysis & Prediction",
+      desc: "• Built a stock prediction model using Time Series Analysis ans Models like (LSTM, ARIMA), trained on 5+ years of market ata.",
       github: "#",
       demo: "#"
     },
     {
-     title: "Developer Portfolio",
-      desc: "Modern React portfolio with dark/light theme.",
+     title: "Smart File Deduplication System",
+      desc: " Designed and implemented a hash-based file deduplication system to eliminate redundant storage using SHA-256 fingerprinting..",
       github: "#",
       demo: "#"
     },

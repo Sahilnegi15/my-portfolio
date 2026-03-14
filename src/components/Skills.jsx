@@ -1,66 +1,42 @@
-import {
-FaReact,
-FaNodeJs,
-FaDocker,
-FaGitAlt,
-FaLinux,
-FaDatabase
-} from "react-icons/fa";
+import React from "react";
+import "../styles/skills.css";
 
-import "../styles/Skills.css";
+const Skills = () => {
+  // Use valid JS variable names
+  const aiMlDl = ["Tensorflow", "pandas", "Numoy ", "Matplotlib", "pytorch","Seaborn"];
+  const programming = ["JavaScript", "C++", "Python", "Java", "Langchain"];
+  const webDevelopment = ["HTML", "CSS", "FAST API", "php", "React"];
+  const Database =["MongoDB","MYSql"]
 
-function Skills() {
+  // Reusable skill tag component
+  const SkillTag = ({ name }) => <div className="skill-tag">{name}</div>;
 
-return (
+  // Skill categories with display names
+  const skillCategories = {
+    "AI/ML/DL": aiMlDl,
+    Programming: programming,
+    "Web Development": webDevelopment,
+    Database :Database,
+  };
 
-<section className="skills" id="skills">
+  return (
+    <section className="skills-section">
+      <div className="skills-container">
+        <h2 className="skills-title">Skills & Expertise</h2>
 
-<h2 className="skills-title">Skills</h2>
-
-<div className="skills-grid">
-
-<div className="skill-card">
-<h3>Languages</h3>
-<ul>
-<li>C</li>
-<li>C++</li>
-<li>Go</li>
-<li>JavaScript</li>
-</ul>
-</div>
-
-<div className="skill-card">
-<h3>Frameworks</h3>
-<ul>
-<li><FaReact /> React</li>
-<li><FaNodeJs /> Node.js</li>
-<li>Express</li>
-</ul>
-</div>
-
-<div className="skill-card">
-<h3>Tools</h3>
-<ul>
-<li><FaDocker /> Docker</li>
-<li><FaGitAlt /> Git</li>
-<li><FaLinux /> Linux</li>
-</ul>
-</div>
-
-<div className="skill-card">
-<h3>Databases</h3>
-<ul>
-<li><FaDatabase /> MySQL</li>
-<li><FaDatabase /> MongoDB</li>
-</ul>
-</div>
-
-</div>
-
-</section>
-
-);
-
-}
+        {Object.entries(skillCategories).map(([categoryName, skills]) => (
+          <div className="skill-category" key={categoryName}>
+            <h3 className="category-title">{categoryName}</h3>
+            <div className="skills-grid">
+              {skills.map((skill, index) => (
+                <SkillTag key={index} name={skill} />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Skills;

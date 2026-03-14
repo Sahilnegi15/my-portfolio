@@ -32,7 +32,7 @@ margin:10px 0;
 }
 
 .hero h3{
-font-weight:400;
+font-weight:500;
 color:#000000;
 font-size: 25px;
 }
@@ -51,6 +51,58 @@ transition:0.3s;
 
 .hero-icons a:hover{
 color:#7d6161;
+}
+
+
+
+.hire-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10%;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: #030000; /* Green button */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hire-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.green-dot {
+  width: 15px;
+  height: 10px;
+  background-color: #00ff00; /* Bright green */
+  border-radius: 50%;
+}
+
+.location-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 1%;
+  padding: 6px 12px;
+  background-color: #f1f3f5;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.location-icon {
+  font-size: 18px;
+  color: #ff4b5c; /* Optional: make the icon colored */
+}
+
+.location-text {
+  color: #555;
 }
 /* BUTTONS */
 
