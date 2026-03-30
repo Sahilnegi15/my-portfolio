@@ -4,8 +4,8 @@ import "../styles/skills.css";
 const Skills = () => {
   // Use valid JS variable names
   const aiMlDl = ["Tensorflow", "pandas", "Numoy ", "Matplotlib", "pytorch","Seaborn"];
-  const programming = ["JavaScript", "C++", "Python", "Java", "Langchain"];
-  const webDevelopment = ["HTML", "CSS", "FAST API", "php", "React"];
+  const Programming = ["JavaScript", "C++", "Python", "Java", "HTML","CSS"];
+  const Framework = ["FAST API", "Node.js", "React","LangChain"];
   const Database =["MongoDB","MYSql"]
 
   // Reusable skill tag component
@@ -14,8 +14,8 @@ const Skills = () => {
   // Skill categories with display names
   const skillCategories = {
     "AI/ML/DL": aiMlDl,
-    Programming: programming,
-    "Web Development": webDevelopment,
+    Programming: Programming,
+    "Framework": Framework,
     Database :Database,
   };
 
