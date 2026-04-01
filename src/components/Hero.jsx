@@ -23,12 +23,12 @@ function Hero() {
       <div className="buttons">
 
         {/* View Resume */}
-       <a href="./Resume.pdf" target="_blank" rel="noopener noreferrer">
+       <a href="./ResumeN.pdf" target="_blank" rel="noopener noreferrer">
           <button className="btn1">View Resume</button>
         </a>
 
         {/* Download Resume */}
-        <a href="./Resume.pdf" download="Sahil_Resume.pdf">
+        <a href="./ResumeN.pdf" download="Sahil_Resume.pdf">
           <button className="btn2">
             Download Resume
           </button>
