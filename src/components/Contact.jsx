@@ -41,7 +41,14 @@ function Contact() {
 
           <h2 className="subtitle">Get in Touch</h2>
 
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form className="contact-form"  onSubmit={(e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const message = e.target.message.value;
+
+    window.location.href = `mailto:sahilnegi5634@gmail.com?subject=Message from ${name}&body=Email: ${email}%0D%0A${message}`;
+  }}>
 
             <input
               type="text"
@@ -86,23 +93,37 @@ function Contact() {
           <div className="contact-container">
 
             <div className="contact-card">
-              <FaEnvelope className="icon" />
-              <span>Email</span>
+              <a href="mailto:sahilnegi5634@gmail.com" className="contact-card">
+  <FaEnvelope className="icon" />
+  <span >Email</span>
+</a>
+
             </div>
 
             <div className="contact-card">
+            <a href ="www.linkedin.com/in/sahil-negi-b91959338" className="contact-card">
               <FaLinkedin className="icon" />
               <span>LinkedIn</span>
+              </a>
             </div>
 
             <div className="contact-card">
+            <a href="https://github.com/Sahilnegi15" className="contact-card">
               <FaGithub className="icon" />
               <span>GitHub</span>
+              </a>
             </div>
 
             <div className="contact-card">
+            <a 
+  href="https://wa.me/8979583223" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="contact-card"
+>
               <FaWhatsapp className="icon" />
               <span>WhatsApp</span>
+              </a>
             </div>
 
           </div>

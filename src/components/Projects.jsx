@@ -22,45 +22,44 @@ function Projects() {
   const projects = [
     {
       title: "Virtual Assistant",
-      desc: " Built an AI self-assistant using LangChain with Agentic RAG, enabling intelligent querying of documents (PDF, DOCX,TXT)",
-      github: "#",
+      desc: "An Agentic Graph RAG system integrating FAISS and Neo4j to enable context-aware and relationship-driven responses beyond traditional RAG limitations.",
       demo: "#",
       image:"VA.jpg"
     },
     {
       title: "Stock Market Analysis & Prediction",
-      desc: "• Built a stock prediction model using Time Series Analysis ans Models like (LSTM, ARIMA), trained on 5+ years of market ata.",
+      desc: "Performed stock market analysis using fundamental and technical indicators to evaluate company performance, identify trends, and support data-driven investment decisions.",
       github: "#",
       demo: "#", 
       image:"s.jpg"
     },
     {
      title: "Auto Scale Engine ",
-      desc: " Designed and implemented a hash-based file deduplication system to eliminate redundant storage using SHA-256 fingerprinting..",
+      desc: " Implemented an intelligent auto-scaling engine that reduces system latency and infrastructure cost by dynamically allocating resources based on demand patterns.",
       github: "https://github.com/Sahilnegi15/auto-scale_engine",
       demo: "#",
       image:"e.jpg"
     },
     {
       title: "Public Eye",
-      desc: "Modern React portfolio with dark/light theme.",
+      desc: "a web platform for public issue reporting with an integrated interactive map, enabling users to report, track, and visualize issues in real-time based on location.",
       github: "https://github.com/Sahilnegi15/PublicEye",
       demo: "#",
        image:"p.jpg"
     },
     {
       title: "Multiple Disease Diagnosis",
-      desc: "Modern React portfolio with dark/light theme.",
+      desc: "Ma machine learning-based system for multiple disease diagnosis, enabling prediction of various health conditions using patient data and medical indicators.",
       github: "https://github.com/Sahilnegi15/Multiple-disease-diagnosis",
       demo: "#",
-      image:"m.jpg"
+      image:"c.jpg"
     },
     {
       title: "Chat Application",
-      desc: "Modern React portfolio with dark/light theme.",
+      desc: "a client–server chat application enabling real-time messaging between users using socket programming.",
       github: "https://github.com/Sahilnegi15/Chat-Application",
       demo: "#",
-      image:"c.jpg"
+      image:"m.jpg"
     }
   ];
 

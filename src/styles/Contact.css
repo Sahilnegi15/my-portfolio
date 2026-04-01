@@ -43,6 +43,8 @@ cursor:pointer;
 
 /* contact cards */
 
+
+
 .contact-container{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -58,6 +60,8 @@ background:#1e293b;
 padding:15px;
 border-radius:10px;
 justify-content:center;
+text-decoration: none;
+color:white;
 }
 
 .icon{
